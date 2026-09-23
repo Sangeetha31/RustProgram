@@ -58,3 +58,12 @@ path="src/Struct2.rs"
 [[bin]]
 name="struct3"
 path="src/Struct3.rs"
+
+[[bin]]
+name="enums1"
+path="src/Enums1.rs"
+
+
+[[bin]]
+name="enums2"
+path="src/Enums2.rs"
