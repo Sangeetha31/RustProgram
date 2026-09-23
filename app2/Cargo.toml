@@ -67,3 +67,15 @@ path="src/Enums1.rs"
 [[bin]]
 name="enums2"
 path="src/Enums2.rs"
+
+[[bin]]
+name="trait1"
+path="src/Trait1.rs"
+
+[[bin]]
+name="generic"
+path="src/Generics.rs"
+
+[[bin]]
+name="err1"
+path="src/Err1.rs"
