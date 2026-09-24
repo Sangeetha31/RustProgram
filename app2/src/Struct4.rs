@@ -13,7 +13,6 @@ impl Employee{
         println!("City: {}", self.address.city);
         println!("State: {}", self.address.state);
 
-
     }
 }
 
