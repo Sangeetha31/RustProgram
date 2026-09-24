@@ -8,7 +8,8 @@ async fn main(){
             .route("/",get(home))
             .route("/greet",get(greet))
             .route("/login",post(login))
-            .route("/update",put(update));
+            .route("/update",put(update))
+            .route("/delete/{id}",delete(delete_user));
 
     let listener=tokio::net::TcpListener::bind("127.0.0.1:8080")
                     .await
@@ -50,4 +51,11 @@ struct UpdateRequest{
 
 async fn update(Json(data):Json<UpdateRequest>)->String{
     format!("Name is Updated for Id:{}",data.id)
+}
+
+async fn delete_user(
+    axum::extract::Path(id):axum::extract::Path<i32>
+)->String
+{
+    format!("Record Deleted with Id:{}",id)
 }
